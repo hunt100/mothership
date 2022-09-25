@@ -1,0 +1,20 @@
+# Project exclude paths
+/.gradle/
+/ms-character/build/
+/ms-character/build/classes/java/main/
+/ms-charlist/build/
+/ms-charlist/build/classes/java/main/
+/ms-common/build/
+/ms-common/build/classes/java/main/
+/ms-model/build/
+/ms-model/build/classes/java/main/
+
+### IntelliJ IDEA ###
+.idea
+/.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/

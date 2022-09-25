@@ -1,0 +1,17 @@
+server:
+  port: 0
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/mothership"
+    username: "postgres"
+    password: "132566s"
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    locations: db/migration
+    enabled: true
