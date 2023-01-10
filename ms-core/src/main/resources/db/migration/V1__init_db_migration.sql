@@ -68,7 +68,7 @@ create table npcs
     salary                  numeric(5, 1),
     attack                  int4,
     hp                      numeric(5, 1),
-    character_id            int8,
+    backpack_id             int8,
     primary key (id)
 );
 create table players
@@ -195,7 +195,7 @@ alter table if exists mercenary_skills
 alter table if exists mercenary_skills
     add constraint FKckfpcynvit4j5qxidsb1tytmm foreign key (mercenary_id) references npcs;
 alter table if exists npcs
-    add constraint FKq6ashf652f9e87g00v3oiqwsk foreign key (character_id) references backpack;
+    add constraint FKq6ashf652f9e87g00v3oiqwsk foreign key (backpack_id) references backpack;
 alter table if exists players
     add constraint FKi2xwc0uu5v6g1nhmdy8w83swl foreign key (backpack_id) references backpack;
 alter table if exists players

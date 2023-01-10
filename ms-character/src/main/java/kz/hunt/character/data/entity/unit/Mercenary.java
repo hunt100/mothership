@@ -35,7 +35,7 @@ public class Mercenary extends NonPlayableCharacter {
     private Set<Skill> skills;
 
     @OneToOne
-    @JoinColumn(name = "character_id")
+    @JoinColumn(name = "backpack_id")
     private Backpack backpack;
 
 }
